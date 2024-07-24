@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/src/input.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400;500&display=swap"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="Images/favicon_io/favicon-32x32.png"
+    />
+    <title>Team</title>
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- navbar -->
+    <nav class="bg-color-2 text-white fixed w-screen top-0 bg-opacity-86 z-50">
+      <div class="container mx-auto px-0 md:flex items-center gap-[27rem]">
+        <!-- Logo -->
+        <div class="flex items-center md:justify-between md:w-auto w-full">
+          <img
+            src="Images/logo_copy2.png"
+            class="md:pl-[5rem] w-[12rem]"
+            alt=""
+          />
+
+          <!-- mobile menu icon -->
+          <div class="md:hidden flex items-center md:ml-0 ml-[9.5rem]">
+            <button
+              type="button"
+              class="mobile-menu-button bg-color-1 border-1 border-primary"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="md:w-6 md:h-6 w-8 h-7 text-primary"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="hidden md:flex md:flex-row flex-col items-center justify-start md:space-x-1 pb-3 md:pb-0 md:gap-5 navigation-menu"
+        >
+          <a
+            href="index.html"
+            class="py-2 px-4 block no-underline hover:text-primary font-h2 text-light"
+            >Home</a
+          >
+          <a
+            href="About.html"
+            class="py-2 px-4 block no-underline hover:text-primary text-light font-h2"
+            >About</a
+          >
+          <a
+            href="Services.html"
+            class="py-2 px-4 block no-underline hover:text-primary text-light font-h2"
+            >Services</a
+          >
+          <!-- Dropdown menu -->
+          <div class="relative">
+            <button
+              type="button"
+              class="dropdown-toggle py-2 px-4 text-light hover:bg-primary hover:text-light flex items-center gap-2 rounded bg-transparent"
+            >
+              <span class="text-light font-h2 text-[1rem]">Pages</span>
+              <svg
+                class="w-3 h-3 pointer-events-none"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </button>
+            <div
+              class="dropdown-menu absolute hidden bg-light text-white rounded-b-lg pb-2 w-48"
+            >
+              <a
+                href="work.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Our Work</a
+              >
+              <a
+                href="clients.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Our Clients</a
+              >
+              <a
+                href="photogall.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Photo Gallery</a
+              >
+              <a
+                href="blog.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Blog</a
+              >
+              <a
+                href="team.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Team</a
+              >
+            </div>
+          </div>
+          <a
+            href="contact.html"
+            class="py-2 px-4 block no-underline hover:text-primary text-light font-h2"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- slide-1 -->
+
+    <div
+      class="w-screen lg:h-[40.25rem] h-[35rem] font-h2 lg:bg-cover bg-center"
+      style="
+        background-image: url('Images/pexels-pixabay-274973.jpg');
+        background-size: cover;
+      "
+    >
+      <div
+        class="absolute lg:mt-[20.375rem] lg:ml-[-2rem] mt-[13.375rem] w-screen grid justify-items-center lg:text-[5rem] text-[4rem] font-semibold text-light hover:animate-ping"
+      >
+        Team
+      </div>
+    </div>
+
+    <!-- slide-2 -->
+
+    <div class="bg-secondary w-screen lg:h-[58.4375rem] h-[90rem] font-h2">
+      <div class="grid justify-items-center lg:ml-[-2rem]">
+        <div
+          class="absolute lg:ml-[-55rem] mt-[7.75rem] ml-[-10rem] text-primary tracking-[0.1em]"
+        >
+          MEET THE TEAM
+        </div>
+        <div
+          class="absolute mt-[10.25rem] lg:w-[31.25rem] w-[20rem] h-[7.625] font-semibold lg:ml-[-33rem] text-light text-[3.125rem]"
+        >
+          We Are Trident Ent. Professional Team
+        </div>
+
+        <div
+          class="grid lg:grid-cols-5 grid-cols-1 lg:gap-10 lg:w-[65.125rem] h-[28.375rem] absolute lg:mt-[23.875rem] mt-[27.875rem]"
+        >
+          <!-- flash card-1 -->
+          <div class="lg:col-span-2">
+            <img
+              src="Images/393A7882.JPG"
+              class="lg:w-[16.875rem] object-cover lg:h-[22.8125rem] w-[20rem] h-[25rem]"
+              alt=""
+            />
+            <div class="text-light pt-[1rem] tracking-[0.1em] text-[1.875rem]">
+              Rajat Dubey
+            </div>
+            <div
+              class="text-primary pt-[0.5rem] tracking-[0.1em] text-[1rem] font-extralight"
+            >
+              FILM MAKER
+            </div>
+          </div>
+          <div
+            class="text-color-1 lg:col-span-2 text-[1.2rem] grid content-center lg:w-[40rem] w-[20rem] font-h2 lg:mt-0 mt-[2rem]"
+          >
+            Rajat Dubey is a Mumbai-based powerhouse known for his exceptional
+            cinematography in "Kasturi: A Story of an Untouchable Man." Beyond
+            his directorial skills in short films and music albums, Rajat's rap
+            video is making waves on O Positive Entertainment. He's also the
+            proud owner of the First Take Film Academy and Dynamic video hub,
+            nurturing the next generation of filmmakers. With boundless
+            creativity and a commitment to excellence, Rajat Dubey is a force to
+            be reckoned with in the film industry
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- slide-3 -->
+
+    <div class="bg-color-2 lg:h-[29.25rem] h-[42.5rem] w-screen font-h2">
+      <div
+        class="absolute grid justify-items-center lg:ml-[-2rem] w-screen h-[3.9375rem] lg:mt-[2.375rem] mt-[4rem]"
+      >
+        <img src="Images/logo_copy.png" class="w-[12rem]" alt="" />
+      </div>
+
+      <div
+        class="absolute w-screen grid justify-items-center lg:ml-[-2rem] lg:mt-[10rem] mt-[11rem]"
+      >
+        <div
+          class="absolute grid lg:grid-cols-5 lg:gap-6 grid-cols-1 gap-3 justify-items-center w-[35.875rem] h-[1.4375rem]"
+        >
+          <div>
+            <a
+              href="index.html"
+              class="no-underline text-primary hover:text-light"
+              alt=""
+              >Home</a
+            >
+          </div>
+          <div>
+            <a
+              href="About.html"
+              class="no-underline text-primary hover:text-light"
+              alt=""
+              >About</a
+            >
+          </div>
+          <div>
+            <a
+              href="Services.html"
+              class="no-underline text-primary hover:text-light"
+              alt=""
+              >Services</a
+            >
+          </div>
+          <div class="lg:mt-[-0.5rem] lg:ml-0 ml-[1rem] relative">
+            <button
+              type="button"
+              class="dropdown-toggle py-2 px-4 text-primary hover:text-light flex items-center gap-2 rounded bg-transparent"
+            >
+              <span class="text-primary font-h2 text-[1rem]">Pages</span>
+              <svg
+                class="w-3 h-3 pointer-events-none"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </button>
+            <div
+              class="dropdown-menu absolute hidden bg-light text-white rounded-b-lg pb-2 w-48"
+            >
+              <a
+                href="work.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Our Work</a
+              >
+              <a
+                href="clients.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Our Clients</a
+              >
+              <a
+                href="photogall.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Photo Gallery</a
+              >
+              <a
+                href="blog.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Blog</a
+              >
+              <a
+                href="team.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Team</a
+              >
+            </div>
+          </div>
+          <div>
+            <a
+              href="contact.html"
+              class="no-underline text-primary hover:text-light"
+              alt=""
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="w-screen grid justify-items-center lg:ml-[-2rem]">
+        <div class="absolute lg:mt-[23rem] mt-[33rem]">
+          <div
+            class="lg:w-[48.125rem] w-[20rem] h-[2.9375rem] flex justify-center text-center text-color-1"
+          >
+            Enhance brand visibility and engagement through captivating video
+            content.
+          </div>
+        </div>
+        <div class="grid justify-items-center">
+          <div
+            class="absolute grid grid-cols-4 gap-4 w-[9.625rem] h-[1.875rem] lg:mt-[19.6875rem] mt-[30rem]"
+          >
+            <div class="flex items-center">
+              <a href="https://www.facebook.com/profile.php?id=100064082941369"
+                ><img src="Images/facebook.png" alt=""
+              /></a>
+            </div>
+            <div class="flex items-center">
+              <a
+                href="https://youtube.com/@tridententertainment3586?si=5789qhkeKzOLTfOz"
+                ><img src="Images/youthob.png" class="" alt=""
+              /></a>
+            </div>
+            <div class="flex items-center">
+              <a href="https://www.instagram.com/tridententertainment431/"
+                ><img src="Images/insta.png" alt=""
+              /></a>
+            </div>
+            <div class="flex items-center">
+              <a
+                href="https://www.linkedin.com/company/trident-entertainment-video-production"
+              >
+                <img
+                  src="Images/linkedin.png"
+                  class="w-[30px] h-[30px] bg-color-2"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="text-color-1 lg:mt-[28rem] lg:ml-[-2rem] mt-[41rem] w-screen absolute grid justify-items-center"
+      >
+        © 2024 Trident Entertainment. All Rights Reserved.
+      </div>
+    </div>
+
+    <script src="contact.js"></script>
+  </body>
+</html>

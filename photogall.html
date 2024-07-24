@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/src/input.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400;500&display=swap"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="Images/favicon_io/favicon-32x32.png"
+    />
+    <title>Photo Gallery</title>
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- navbar -->
+    <nav class="bg-color-2 text-white fixed w-screen top-0 bg-opacity-86 z-50">
+      <div class="container mx-auto px-0 md:flex items-center gap-[27rem]">
+        <!-- Logo -->
+        <div class="flex items-center md:justify-between md:w-auto w-full">
+          <img
+            src="Images/logo_copy2.png"
+            class="md:pl-[5rem] w-[12rem]"
+            alt=""
+          />
+
+          <!-- mobile menu icon -->
+          <div class="md:hidden flex items-center md:ml-0 ml-[9.5rem]">
+            <button
+              type="button"
+              class="mobile-menu-button bg-color-1 border-1 border-primary"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="md:w-6 md:h-6 w-8 h-7 text-primary"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="hidden md:flex md:flex-row flex-col items-center justify-start md:space-x-1 pb-3 md:pb-0 md:gap-5 navigation-menu"
+        >
+          <a
+            href="index.html"
+            class="py-2 px-4 block no-underline hover:text-primary font-h2 text-light"
+            >Home</a
+          >
+          <a
+            href="About.html"
+            class="py-2 px-4 block no-underline hover:text-primary text-light font-h2"
+            >About</a
+          >
+          <a
+            href="Services.html"
+            class="py-2 px-4 block no-underline hover:text-primary text-light font-h2"
+            >Services</a
+          >
+          <!-- Dropdown menu -->
+          <div class="relative">
+            <button
+              type="button"
+              class="dropdown-toggle py-2 px-4 text-light hover:bg-primary hover:text-light flex items-center gap-2 rounded bg-transparent"
+            >
+              <span class="text-light font-h2 text-[1rem]">Pages</span>
+              <svg
+                class="w-3 h-3 pointer-events-none"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </button>
+            <div
+              class="dropdown-menu absolute hidden bg-light text-white rounded-b-lg pb-2 w-48"
+            >
+              <a
+                href="work.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Our Work</a
+              >
+              <a
+                href="clients.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Our Clients</a
+              >
+              <a
+                href="photogall.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Photo Gallery</a
+              >
+              <a
+                href="blog.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Blog</a
+              >
+            </div>
+          </div>
+          <a
+            href="contact.html"
+            class="py-2 px-4 block no-underline hover:text-primary text-light font-h2"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- slide-1 -->
+
+    <div
+      class="w-screen lg:h-[63.25rem] h-[108rem] font-h2 lg:bg-cover bg-center"
+      style="
+        background-image: url('Images/camera-5113699_1920.jpg');
+        background-size: cover;
+      "
+    >
+      <div class="grid justify-items-center">
+        <div
+          class="absolute lg:w-[40rem] w-[20rem] lg:mt-[31rem] mt-[8rem] lg:ml-[-3rem] ml-[3rem] lg:-rotate-90 rotate-0 grid justify-items-center font-h2 text-[5rem] font-semibold text-light"
+        >
+          Photo Gallery
+        </div>
+      </div>
+
+      <div class="grid justify-items-center lg:ml-[-3rem]">
+        <div
+          class="absolute lg:w-[50.25rem] h-[40.25rem] grid lg:grid-cols-2 grid-cols-1 gap-10 lg:gap-10 justify-items-center lg:mt-[8rem] mt-[21rem]"
+        >
+          <!-- card-1 -->
+
+          <a href="#pre-wedding-images">
+            <div class="group w-64 h-60 [perspective:1000px]">
+              <div
+                class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]"
+              >
+                <div class="absolute inset-0">
+                  <img
+                    src="Images/pre-wedding/IMG-20220329-WA0026.jpg"
+                    class="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="absolute inset-0 h-full w-full rounded-xl bg-black/80 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]"
+                >
+                  <div
+                    class="flex min-h-full flex-col items-center justify-center"
+                  >
+                    <h1 class="font-h2 text-light">Pre-wedding Photos</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- card-2 -->
+
+          <a href="#wedding-images">
+            <div class="group w-64 h-60 [perspective:1000px]">
+              <div
+                class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]"
+              >
+                <div class="absolute inset-0">
+                  <img
+                    src="Images/wedding photos/IMG_8419.JPG"
+                    class="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="absolute inset-0 h-full w-full rounded-xl bg-black/80 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]"
+                >
+                  <div
+                    class="flex min-h-full flex-col items-center justify-center"
+                  >
+                    <h1 class="font-h2 text-light">Wedding Photos</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- card-3 -->
+
+          <a href="#modeling-images">
+            <div class="group w-64 h-60 [perspective:1000px]">
+              <div
+                class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]"
+              >
+                <div class="absolute inset-0">
+                  <img
+                    src="Images/Modeling_photos/IMG_20221218_160608.jpg"
+                    class="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="absolute inset-0 h-full w-full rounded-xl bg-black/80 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]"
+                >
+                  <div
+                    class="flex min-h-full flex-col items-center justify-center"
+                  >
+                    <h1 class="font-h2 text-light">Modeling Photography</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- card-4 -->
+
+          <a href="#food-images">
+            <div class="group w-64 h-60 [perspective:1000px]">
+              <div
+                class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]"
+              >
+                <div class="absolute inset-0">
+                  <img
+                    src="Images/food_photos/DSC_6191.jpg"
+                    class="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="absolute inset-0 h-full w-full rounded-xl bg-black/80 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]"
+                >
+                  <div
+                    class="flex min-h-full flex-col items-center justify-center"
+                  >
+                    <h1 class="font-h2 text-light">Food Photography</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- card-5 -->
+
+          <a href="#event-images">
+            <div class="group w-64 h-60 [perspective:1000px]">
+              <div
+                class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]"
+              >
+                <div class="absolute inset-0">
+                  <img
+                    src="Images/Event_photos/IMG_1960.JPG"
+                    class="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="absolute inset-0 h-full w-full rounded-xl bg-black/80 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]"
+                >
+                  <div
+                    class="flex min-h-full flex-col items-center justify-center"
+                  >
+                    <h1 class="font-h2 text-light">Event Photography</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- slide-1 -->
+
+    <div
+      class="h-[7rem] w-screen"
+      style="
+        background: rgb(255, 116, 37);
+        background: radial-gradient(
+          circle,
+          rgba(255, 116, 37, 1) 0%,
+          rgba(24, 24, 24, 1) 100%
+        );
+      "
+    >
+      <div
+        id="pre-wedding-images"
+        class="w-screen md:ml-0 ml-[2rem] h-[7rem] grid justify-items-center items-center text-[3rem] font-h2 font-semibold text-light"
+      >
+        Pre-Wedding Images
+      </div>
+    </div>
+    <div class="p-5 md:p-10 bg-secondary">
+      <div
+        class="columns-1 gap-5 lg:gap-8 sm:columns-1 lg:columns-1 xl:columns-2 [&>img:not(:first-child)]:mt-5 lg:[&>img:novt(:first-child)]:mt-8"
+      >
+        <img
+          src="Images/pre-wedding/IMG-20220329-WA0015.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/pre-wedding/IMG-20220329-WA0016.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/pre-wedding/IMG-20220329-WA0022.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/pre-wedding/IMG-20220329-WA0026.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/pre-wedding/IMG-20220329-WA0033.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/pre-wedding/IMG-20220329-WA0036.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/pre-wedding/IMG-20220329-WA0040.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/pre-wedding/IMG-20220329-WA0041.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/pre-wedding/IMG-20220329-WA0043.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/pre-wedding/IMG-20220329-WA0044.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/pre-wedding/IMG-20220329-WA0047.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+        <img
+          src="Images/pre-wedding/IMG-20220329-WA0049.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+        <img
+          src="Images/pre-wedding/IMG-20220329-WA0050.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+        <img
+          src="Images/pre-wedding/IMG-20220329-WA0059.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+        <img
+          src="Images/pre-wedding/IMG-20220329-WA0060.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+        <img
+          src="Images/pre-wedding/IMG-20220329-WA0061.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+        <img
+          src="Images/pre-wedding/IMG-20220329-WA0079.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+        <img
+          src="Images/pre-wedding/IMG-20220329-WA0080.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+        <img
+          src="Images/pre-wedding/IMG-20220329-WA0094.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+        <img
+          src="Images/pre-wedding/IMG-20220403-WA0069.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+        <img
+          src="Images/pre-wedding/IMG-20220403-WA0106.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- slide-2 -->
+    <div
+      class="h-[7rem] w-screen"
+      style="
+        background: rgb(255, 116, 37);
+        background: radial-gradient(
+          circle,
+          rgba(255, 116, 37, 1) 0%,
+          rgba(24, 24, 24, 1) 100%
+        );
+      "
+    >
+      <div
+        id="wedding-images"
+        class="w-screen md:ml-0 ml-[5.5rem] h-[7rem] grid justify-items-center items-center text-[3rem] font-h2 font-semibold text-light"
+      >
+        Wedding Images
+      </div>
+    </div>
+    <div class="p-5 md:p-10 bg-secondary">
+      <div
+        class="columns-1 gap-5 lg:gap-8 sm:columns-1 lg:columns-1 xl:columns-2 [&>img:not(:first-child)]:mt-5 lg:[&>img:novt(:first-child)]:mt-8"
+      >
+        <img
+          src="Images/wedding photos/IMG-20181220-WA0010.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+        <img
+          src="Images/wedding photos/IMG-20181220-WA0001.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/wedding photos/IMG_8507.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/wedding photos/IMG_8378.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/wedding photos/IMG_8399.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/wedding photos/IMG_8409.JPG"
+          class="md:w-[42rem] w-[22rem] md:mt-0"
+          alt=""
+        />
+
+        <img
+          src="Images/wedding photos/IMG_8385.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/wedding photos/IMG_8419.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/wedding photos/IMG_8422.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/wedding photos/IMG_8503.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/wedding photos/IMG_8376.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+      </div>
+    </div>
+    <!-- slide-3 -->
+
+    <div
+      class="h-[7rem] w-screen"
+      style="
+        background: rgb(255, 116, 37);
+        background: radial-gradient(
+          circle,
+          rgba(255, 116, 37, 1) 0%,
+          rgba(24, 24, 24, 1) 100%
+        );
+      "
+    >
+      <div
+        id="modeling-images"
+        class="w-screen h-[7rem] md:ml-0 ml-[2.5rem] grid justify-items-center items-center text-[3rem] font-h2 font-semibold text-light"
+      >
+        Modeling Photography
+      </div>
+    </div>
+    <div class="p-5 md:p-10 md:pb-[8rem] bg-secondary">
+      <div
+        class="columns-1 gap-5 lg:gap-8 sm:columns-1 lg:columns-1 xl:columns-2 [&>img:not(:first-child)]:mt-5 lg:[&>img:novt(:first-child)]:mt-8"
+      >
+        <img
+          src="Images/Modeling_photos/DSC04336.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Modeling_photos/IMG-20180721-WA0002.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Modeling_photos/IMG-20180721-WA0003.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Modeling_photos/IMG-20180721-WA0004.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Modeling_photos/IMG-20180721-WA0005.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Modeling_photos/IMG-20180721-WA0006.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Modeling_photos/IMG-20180721-WA0007.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Modeling_photos/IMG-20180721-WA0017.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Modeling_photos/IMG-20231223-WA0143.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Modeling_photos/IMG-20231223-WA0146.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Modeling_photos/IMG-20231229-WA0127.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+        <img
+          src="Images/Modeling_photos/IMG-20240202-WA0147.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+        <img
+          src="Images/Modeling_photos/IMG-20240202-WA0148.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+        <img
+          src="Images/Modeling_photos/IMG-20240314-WA0007.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Modeling_photos/IMG-20240315-WA0041.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Modeling_photos/IMG-20240326-WA0009.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+        <img
+          src="Images/Modeling_photos/IMG_20221218_160608.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+        <img
+          src="Images/Modeling_photos/IMG_20221218_161132.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+        <img
+          src="Images/Modeling_photos/IMG_20221218_165700.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- slide-3 -->
+
+    <div
+      class="h-[7rem] w-screen"
+      style="
+        background: rgb(255, 116, 37);
+        background: radial-gradient(
+          circle,
+          rgba(255, 116, 37, 1) 0%,
+          rgba(24, 24, 24, 1) 100%
+        );
+      "
+    >
+      <div
+        id="food-images"
+        class="w-screen md:ml-0 ml-[2.2rem] h-[7rem] grid justify-items-center items-center text-[3rem] font-h2 font-semibold text-light"
+      >
+        Food Photography
+      </div>
+    </div>
+    <div class="p-5 md:p-10 bg-secondary">
+      <div
+        class="columns-1 gap-5 lg:gap-8 sm:columns-1 lg:columns-1 xl:columns-2 [&>img:not(:first-child)]:mt-5 lg:[&>img:novt(:first-child)]:mt-8"
+      >
+        <img
+          src="Images/food_photos/DSC_5762.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/food_photos/DSC_6191.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/food_photos/DSC_6332.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/food_photos/DSC_6361.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/food_photos/DSC_7267.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/food_photos/DSC_7794.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/food_photos/DSC_7845.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/food_photos/DSC_7865.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/food_photos/DSC_7971.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/food_photos/DSC_8330.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/food_photos/DSC_8386.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- slide-4 -->
+
+    <div
+      class="h-[7rem] w-screen"
+      style="
+        background: rgb(255, 116, 37);
+        background: radial-gradient(
+          circle,
+          rgba(255, 116, 37, 1) 0%,
+          rgba(24, 24, 24, 1) 100%
+        );
+      "
+    >
+      <div
+        id="event-images"
+        class="w-screen h-[7rem] md:ml-0 ml-[2.5rem] grid justify-items-center items-center text-[3rem] font-h2 font-semibold text-light"
+      >
+        Event Photography
+      </div>
+    </div>
+    <div class="p-5 md:p-10 bg-secondary">
+      <div
+        class="columns-1 gap-5 lg:gap-8 sm:columns-1 lg:columns-1 xl:columns-2 [&>img:not(:first-child)]:mt-5 lg:[&>img:novt(:first-child)]:mt-8"
+      >
+        <img
+          src="Images/Event_photos/10.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/2.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/3.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/4.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/6.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/8.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/FB_IMG_1570454716864.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/FB_IMG_1570454779208.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/FB_IMG_1570454798976.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/FB_IMG_1570454828159.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/FB_IMG_1570454834580.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+        <img
+          src="Images/Event_photos/IMG-20191227-WA0008.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG-20191227-WA0010.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG-20191227-WA0011.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG-20191227-WA0023.jpg"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_1960.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_1971.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_1972.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2020.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2055.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2077.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2078.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2105.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2216.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2266.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2279.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2298.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2306.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2331.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2338.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2347.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+        <img
+          src="Images/Event_photos/IMG_2349.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2387.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2390.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2391.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2417.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2459.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2467.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2485.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2490.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2531.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2533.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        //
+        <img
+          src="Images/Event_photos/IMG_2536.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2567.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2572.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2580.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2581.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2587.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2588.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2608.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+        <img
+          src="Images/Event_photos/IMG_2709.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2794.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2860.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2865.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+
+        <img
+          src="Images/Event_photos/IMG_2874.JPG"
+          class="md:w-[42rem] w-[22rem]"
+          alt=""
+        />
+      </div>
+    </div>
+    <!-- slide-6 -->
+
+    <div class="bg-color-2 lg:h-[29.25rem] h-[42.5rem] w-screen font-h2">
+      <div
+        class="absolute grid justify-items-center w-screen h-[3.9375rem] lg:mt-[2.375rem] mt-[4rem]"
+      >
+        <img src="Images/logo_copy.png" class="w-[12rem]" alt="" />
+      </div>
+
+      <div
+        class="absolute w-screen grid justify-items-center lg:mt-[10rem] mt-[11rem]"
+      >
+        <div
+          class="absolute grid lg:grid-cols-5 lg:gap-6 grid-cols-1 gap-3 justify-items-center w-[35.875rem] h-[1.4375rem]"
+        >
+          <div>
+            <a
+              href="index.html"
+              class="no-underline text-primary hover:text-light"
+              alt=""
+              >Home</a
+            >
+          </div>
+          <div>
+            <a
+              href="About.html"
+              class="no-underline text-primary hover:text-light"
+              alt=""
+              >About</a
+            >
+          </div>
+          <div>
+            <a
+              href="Services.html"
+              class="no-underline text-primary hover:text-light"
+              alt=""
+              >Services</a
+            >
+          </div>
+          <div class="lg:mt-[-0.5rem] lg:ml-0 ml-[1rem] relative">
+            <button
+              type="button"
+              class="dropdown-toggle py-2 px-4 text-primary hover:text-light flex items-center gap-2 rounded bg-transparent"
+            >
+              <span class="text-primary font-h2 text-[1rem]">Pages</span>
+              <svg
+                class="w-3 h-3 pointer-events-none"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </button>
+            <div
+              class="dropdown-menu absolute hidden bg-light text-white rounded-b-lg pb-2 w-48"
+            >
+              <a
+                href="work.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Our Work</a
+              >
+              <a
+                href="clients.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Our Clients</a
+              >
+              <a
+                href="photogall.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Photo Gallery</a
+              >
+              <a
+                href="blog.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Blog</a
+              >
+            </div>
+          </div>
+          <div>
+            <a
+              href="contact.html"
+              class="no-underline text-primary hover:text-light"
+              alt=""
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="w-screen grid justify-items-center">
+        <div class="absolute lg:mt-[23rem] mt-[33rem]">
+          <div
+            class="lg:w-[48.125rem] w-[20rem] h-[2.9375rem] flex justify-center text-center text-color-1"
+          >
+            Enhance brand visibility and engagement through captivating video
+            content.
+          </div>
+        </div>
+        <div class="grid justify-items-center">
+          <div
+            class="absolute grid grid-cols-4 gap-4 w-[9.625rem] h-[1.875rem] lg:mt-[19.6875rem] mt-[30rem]"
+          >
+            <div class="flex items-center">
+              <a href="https://www.facebook.com/profile.php?id=100064082941369"
+                ><img src="Images/facebook.png" alt=""
+              /></a>
+            </div>
+            <div class="flex items-center">
+              <a
+                href="https://youtube.com/@tridententertainment3586?si=5789qhkeKzOLTfOz"
+                ><img src="Images/youthob.png" class="" alt=""
+              /></a>
+            </div>
+            <div class="flex items-center">
+              <a href="https://www.instagram.com/tridententertainment431/"
+                ><img src="Images/insta.png" alt=""
+              /></a>
+            </div>
+            <div class="flex items-center">
+              <a
+                href="https://www.linkedin.com/company/trident-entertainment-video-production"
+              >
+                <img
+                  src="Images/linkedin.png"
+                  class="w-[30px] h-[30px] bg-color-2"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="text-color-1 lg:mt-[28rem] mt-[41rem] w-screen absolute grid justify-items-center"
+      >
+        © 2024 Trident Entertainment. All Rights Reserved.
+      </div>
+    </div>
+
+    <script src="contact.js"></script>
+  </body>
+</html>

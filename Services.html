@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/src/input.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400;500&display=swap"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="Images/favicon_io/favicon-32x32.png"
+    />
+    <title>Services</title>
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- navbar -->
+    <nav class="bg-color-2 text-white fixed w-screen top-0 bg-opacity-86 z-50">
+      <div class="container mx-auto px-0 md:flex items-center gap-[27rem]">
+        <!-- Logo -->
+        <div class="flex items-center md:justify-between md:w-auto w-full">
+          <img
+            src="Images/logo_copy2.png"
+            class="md:pl-[5rem] w-[12rem]"
+            alt=""
+          />
+
+          <!-- mobile menu icon -->
+          <div class="md:hidden flex items-center md:ml-0 ml-[9.5rem]">
+            <button
+              type="button"
+              class="mobile-menu-button bg-color-1 border-1 border-primary"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="md:w-6 md:h-6 w-8 h-7 text-primary"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="hidden md:flex md:flex-row flex-col items-center justify-start md:space-x-1 pb-3 md:pb-0 md:gap-5 navigation-menu"
+        >
+          <a
+            href="index.html"
+            class="py-2 px-4 block no-underline hover:text-primary font-h2 text-light"
+            >Home</a
+          >
+          <a
+            href="About.html"
+            class="py-2 px-4 block no-underline hover:text-primary text-light font-h2"
+            >About</a
+          >
+          <a
+            href="Services.html"
+            class="py-2 px-4 block no-underline hover:text-primary text-light font-h2"
+            >Services</a
+          >
+          <!-- Dropdown menu -->
+          <div class="relative">
+            <button
+              type="button"
+              class="dropdown-toggle py-2 px-4 text-light hover:bg-primary hover:text-light flex items-center gap-2 rounded bg-transparent"
+            >
+              <span class="text-light font-h2 text-[1rem]">Pages</span>
+              <svg
+                class="w-3 h-3 pointer-events-none"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </button>
+            <div
+              class="dropdown-menu absolute hidden bg-light text-white rounded-b-lg pb-2 w-48"
+            >
+              <a
+                href="work.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Our Work</a
+              >
+              <a
+                href="clients.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Our Clients</a
+              >
+              <a
+                href="photogall.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Photo Gallery</a
+              >
+              <a
+                href="blog.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Blog</a
+              >
+            </div>
+          </div>
+          <a
+            href="contact.html"
+            class="py-2 px-4 block no-underline hover:text-primary text-light font-h2"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- slide-1 -->
+
+    <div
+      class="w-screen lg:h-[40.25rem] h-[30.25rem] font-h2 lg:bg-cover bg-center"
+      style="
+        background-image: url('Images/professional-camera-for-professional-shooting-2023-11-27-05-06-11-utc_pt2.jpg');
+        background-size: cover;
+      "
+    >
+      <div
+        class="absolute lg:mt-[17.5rem] lg:ml-[-2rem] mt-[13.375rem] w-screen grid justify-items-center lg:text-[5rem] text-[4rem] font-semibold text-light hover:animate-ping"
+      >
+        Services
+      </div>
+      <div class="grid justify-items-center lg:ml-[-2rem]">
+        <div
+          class="absolute font-semibold lg:mt-[26.18rem] mt-[19.5rem] w-[20.5rem] lg:ml-0 ml-[2rem] lg:w-screen grid justify-items-center text-color-1"
+        >
+          Transforming ideas into realities, our services pave the path to
+          success, delivering excellence at every turn.
+        </div>
+      </div>
+    </div>
+
+    <!-- slide-2 -->
+
+    <div class="relative bg-color-2 w-screen font-h2 lg:h-[135rem] h-[276rem]">
+      <div class="grid justify-items-center lg:ml-[-3rem]">
+        <div
+          class="absolute text-primary mt-[6.8125rem] lg:ml-[-60rem] ml-[3rem] tracking-[0.1em]"
+        >
+          SERVICE WE DO
+        </div>
+        <div
+          class="absolute text-light mt-[9.3125rem] lg:ml-[-36rem] ml-[3rem] font-semibold text-31xl lg:w-[33.625rem] lg:h-[11.438rem]"
+        >
+          We Create Stunning Visuals That Tell Your Story
+        </div>
+      </div>
+
+      <div class="grid justify-items-center lg:ml-[-2rem]">
+        <div
+          class="absolute lg:mt-[1.4rem] mt-[7rem] lg:w-[71.375rem] w-[22rem] lg:h-[103.875rem] h-[240rem] grid lg:grid-cols-2 grid-flow-row lg:gap-6 grid-cols-1 gap-6 pt-[22.625rem]"
+        >
+          <div class="reveal div-1 border border-solid border-gray-300">
+            <img
+              src="Images/camera-at-a-media-conference-2023-11-27-05-06-27-utc.jpg"
+              class="mt-[2rem] lg:ml-[2rem] ml-[1rem] object-cover w-[20rem]"
+              alt=""
+            />
+            <div class="mt-[1rem]">
+              <div
+                class="text-light lg:ml-[2rem] ml-[1rem] text-[1.875rem] pb-4 font-semibold h-[1.9375rem]"
+              >
+                Video Production
+              </div>
+              <div
+                class="text-color-1 lg:ml-[2rem] ml-[1rem] mb-[-5rem] lg:mr-0 mr-[0.2rem]"
+              >
+                Corporate, Wedding, Pre-wedding, promotional video and Event
+                Coverage: We offer comprehensive videography services tailored
+                to your needs, whether it's capturing corporate events,
+                documenting weddings, creating romantic pre-wedding shoots, or
+                covering any type of event.
+              </div>
+            </div>
+          </div>
+          <div class="reveal div-2 border border-solid border-gray-300">
+            <img
+              src="Images/new-year-eve-2023-11-27-04-53-57-utc.jpg"
+              class="mt-[2rem] lg:ml-[2rem] ml-[1rem] object-cover w-[20rem]"
+              alt=""
+            />
+            <div class="mt-[1rem]">
+              <div
+                class="text-light lg:ml-[2rem] ml-[1rem] text-[1.875rem] pb-4 font-semibold h-[1.9375rem]"
+              >
+                Event Management
+              </div>
+              <div
+                class="text-color-1 lg:ml-[2rem] ml-[1rem] lg:mr-0 mr-[0.2rem] mb-[-5rem]"
+              >
+                where we specialize in event management services tailored to
+                your needs. From production to artist management, sound, light,
+                stage setups, and handling weddings, corporate events, and
+                concerts, we've got you covered. With our experience,
+                creativity, and reliability, we'll make your event
+                unforgettable.
+              </div>
+            </div>
+          </div>
+          <div class="reveal div-3 border border-solid border-gray-300">
+            <img
+              src="Images/cinema-and-entertainment-2023-11-27-05-14-51-utc.jpg"
+              class="mt-[2rem] lg:ml-[2rem] ml-[1rem] object-fill w-[20rem]"
+              alt=""
+            />
+            <div class="mt-[1rem]">
+              <div
+                class="text-light lg:ml-[2rem] ml-[1rem] text-[1.875rem] pb-4 font-semibold h-[1.9375rem]"
+              >
+                Casting
+              </div>
+              <div
+                class="text-color-1 lg:ml-[2rem] ml-[1rem] mb-[-5rem] lg:mr-0 mr-[0.2rem]"
+              >
+                Discover your next role with us! From web series and ad shoots
+                to corporate videos and short films etc.we provide casting
+                services, offering a platform for talented artists
+              </div>
+            </div>
+          </div>
+          <div class="reveal div-4 border border-solid border-gray-300">
+            <img
+              src="Images/professional-photographer-and-model-on-fashion-sho-2023-11-27-04-55-58-utc.jpg"
+              class="mt-[2rem] lg:ml-[2rem] ml-[1rem] object-cover w-[20rem] h-[20rem]"
+              alt=""
+            />
+            <div class="mt-[1rem]">
+              <div
+                class="text-light lg:ml-[2rem] ml-[1rem] text-[1.875rem] pb-4 font-semibold h-[1.9375rem]"
+              >
+                Modeling Agency
+              </div>
+              <div
+                class="text-color-1 lg:ml-[2rem] ml-[1rem] mb-[-5rem] lg:mr-0 mr-[0.2rem]"
+              >
+                we curate dynamic fashion experiences! From regular fashion
+                music videos to captivating fashion shows, we showcase the
+                latest trends and talents. Join us and redefine style together!
+              </div>
+            </div>
+          </div>
+          <div class="reveal div-5 border border-solid border-gray-300">
+            <img
+              src="Images/shot-of-two-women-dressed-in-stylish-yellow-clothe-2023-11-27-04-51-14-utc.jpg"
+              class="mt-[2rem] lg:ml-[2rem] ml-[1rem] object-cover w-[20rem]"
+              alt=""
+            />
+            <div class="mt-[1rem]">
+              <div
+                class="text-light lg:ml-[2rem] ml-[1rem] text-[1.875rem] pb-4 font-semibold h-[1.9375rem]"
+              >
+                Ads Shoots
+              </div>
+              <div
+                class="text-color-1 lg:ml-[2rem] ml-[1rem] mb-[-5rem] lg:mr-0 mr-[0.2rem]"
+              >
+                Lights, camera, action! Transform your brand's story into a
+                cinematic masterpiece with our ad video shoot services. From
+                concept to screen, we bring your vision to life, crafting
+                captivating visuals that resonate with your audience. With our
+                expertise and creativity, your brand will shine like never
+                before. Let's make magic together on camera!
+              </div>
+            </div>
+          </div>
+          <div class="reveal div-6 border border-solid border-gray-300">
+            <img
+              src="Images/vintage-video-cassettes-2023-11-27-05-36-46-utc.jpg"
+              class="mt-[2rem] lg:ml-[2rem] ml-[1rem] object-cover w-[20rem]"
+              alt=""
+            />
+            <div class="mt-[1rem]">
+              <div
+                class="text-light lg:ml-[2rem] ml-[1rem] text-[1.875rem] pb-4 font-semibold h-[1.9375rem]"
+              >
+                Short Films & Music Video
+              </div>
+              <div
+                class="text-color-1 lg:ml-[2rem] ml-[1rem] mb-[-5rem] lg:mt-0 mt-[2.5rem] lg:mr-0 mr-[0.2rem]"
+              >
+                Step into the spotlight with our captivating short films and
+                music videos, tailored for OTT channels like T-Series, Zee
+                Music, Hotstar, and more. From gripping narratives to
+                mesmerizing melodies, we create cinematic experiences that
+                captivate audiences worldwide. Elevate your content game and
+                make a lasting impact on the digital stage with our production
+                expertise. Let's create something unforgettable together!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr style="margin: 0 auto; color: #9e9e9e; border-top: 1px solid" />
+    <!-- slide-3 -->
+
+    <div class="bg-color-2 lg:h-[29.25rem] h-[42.5rem] w-screen font-h2">
+      <div
+        class="absolute grid justify-items-center lg:ml-[-2rem] w-screen h-[3.9375rem] lg:mt-[2.375rem] mt-[4rem]"
+      >
+        <img src="Images/logo_copy.png" class="w-[12rem]" alt="" />
+      </div>
+
+      <div
+        class="absolute w-screen grid justify-items-center lg:ml-[-2rem] lg:mt-[10rem] mt-[11rem]"
+      >
+        <div
+          class="absolute grid lg:grid-cols-5 lg:gap-6 grid-cols-1 gap-3 justify-items-center w-[35.875rem] h-[1.4375rem]"
+        >
+          <div>
+            <a
+              href="index.html"
+              class="no-underline text-primary hover:text-light"
+              alt=""
+              >Home</a
+            >
+          </div>
+          <div>
+            <a
+              href="About.html"
+              class="no-underline text-primary hover:text-light"
+              alt=""
+              >About</a
+            >
+          </div>
+          <div>
+            <a
+              href="Services.html"
+              class="no-underline text-primary hover:text-light"
+              alt=""
+              >Services</a
+            >
+          </div>
+          <div class="lg:mt-[-0.5rem] lg:ml-0 ml-[1rem] relative">
+            <button
+              type="button"
+              class="dropdown-toggle py-2 px-4 text-primary hover:text-light flex items-center gap-2 rounded bg-transparent"
+            >
+              <span class="text-primary font-h2 text-[1rem]">Pages</span>
+              <svg
+                class="w-3 h-3 pointer-events-none"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </button>
+            <div
+              class="dropdown-menu absolute hidden bg-light text-white rounded-b-lg pb-2 w-48"
+            >
+              <a
+                href="work.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Our Work</a
+              >
+              <a
+                href="clients.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Our Clients</a
+              >
+              <a
+                href="photogall.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Photo Gallery</a
+              >
+              <a
+                href="blog.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Blog</a
+              >
+            </div>
+          </div>
+          <div>
+            <a
+              href="contact.html"
+              class="no-underline text-primary hover:text-light"
+              alt=""
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="w-screen grid justify-items-center lg:ml-[-2rem]">
+        <div class="absolute lg:mt-[23rem] mt-[33rem]">
+          <div
+            class="lg:w-[48.125rem] w-[20rem] h-[2.9375rem] flex justify-center text-center text-color-1"
+          >
+            Enhance brand visibility and engagement through captivating video
+            content.
+          </div>
+        </div>
+        <div class="grid justify-items-center">
+          <div
+            class="absolute grid grid-cols-4 gap-4 w-[9.625rem] h-[1.875rem] lg:mt-[19.6875rem] mt-[30rem]"
+          >
+            <div class="flex items-center">
+              <a href="https://www.facebook.com/profile.php?id=100064082941369"
+                ><img src="Images/facebook.png" alt=""
+              /></a>
+            </div>
+            <div class="flex items-center">
+              <a
+                href="https://youtube.com/@tridententertainment3586?si=5789qhkeKzOLTfOz"
+                ><img src="Images/youthob.png" class="" alt=""
+              /></a>
+            </div>
+            <div class="flex items-center">
+              <a href="https://www.instagram.com/tridententertainment431/"
+                ><img src="Images/insta.png" alt=""
+              /></a>
+            </div>
+            <div class="flex items-center">
+              <a
+                href="https://www.linkedin.com/company/trident-entertainment-video-production"
+              >
+                <img
+                  src="Images/linkedin.png"
+                  class="w-[30px] h-[30px] bg-color-2"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="text-color-1 lg:ml-[-2rem] lg:mt-[28rem] mt-[41rem] w-screen absolute grid justify-items-center"
+      >
+        © 2024 Trident Entertainment. All Rights Reserved.
+      </div>
+    </div>
+
+    <script src="contact.js"></script>
+    <script>
+      window.addEventListener("scroll", reveal);
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+        for (var i = 0; i < reveals.length; i++) {
+          var windowheight = window.innerHeight;
+          var revealTop = reveals[i].getBoundingClientRect().top;
+          var revealPoint = 150;
+
+          if (revealTop < windowheight - revealPoint) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

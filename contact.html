@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/src/input.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400;500&display=swap"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="Images/favicon_io/favicon-32x32.png"
+    />
+    <title>Contact Us</title>
+  </head>
+  <body class=">
+    <!-- navbar -->
+    <nav class="bg-color-2 text-white w-screen fixed top-0 bg-opacity-86 z-50">
+      <div class="container mx-auto px-0 md:flex items-center gap-[27rem]">
+        <!-- Logo -->
+        <div class="flex items-center md:justify-between md:w-auto w-full">
+          <img
+            src="Images/logo_copy2.png"
+            class="md:pl-[5rem] w-[12rem]"
+            alt=""
+          />
+
+          <!-- mobile menu icon -->
+          <div class="md:hidden flex items-center md:ml-0 ml-[9.5rem]">
+            <button
+              type="button"
+              class="mobile-menu-button bg-color-1 border-1 border-primary"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="md:w-6 md:h-6 w-8 h-7 text-primary"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="hidden md:flex md:flex-row flex-col items-center justify-start md:space-x-1 pb-3 md:pb-0 md:gap-5 navigation-menu"
+        >
+          <a
+            href="index.html"
+            class="py-2 px-4 block no-underline hover:text-primary font-h2 text-light"
+            >Home</a
+          >
+          <a
+            href="About.html"
+            class="py-2 px-4 block no-underline hover:text-primary text-light font-h2"
+            >About</a
+          >
+          <a
+            href="Services.html"
+            class="py-2 px-4 block no-underline hover:text-primary text-light font-h2"
+            >Services</a
+          >
+          <!-- Dropdown menu -->
+          <div class="relative">
+            <button
+              type="button"
+              class="dropdown-toggle py-2 px-4 text-light hover:bg-primary hover:text-light flex items-center gap-2 rounded bg-transparent"
+            >
+              <span class="text-light font-h2 text-[1rem]">Pages</span>
+              <svg
+                class="w-3 h-3 pointer-events-none"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </button>
+            <div
+              class="dropdown-menu absolute hidden bg-light text-white rounded-b-lg pb-2 w-48"
+            >
+              <a
+                href="work.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Our Work</a
+              >
+              <a
+                href="clients.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Our Clients</a
+              >
+              <a
+                href="photogall.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Photo Gallery</a
+              >
+              <a
+                href="blog.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Blog</a
+              >
+            </div>
+          </div>
+          <a
+            href="contact.html"
+            class="py-2 px-4 block no-underline hover:text-primary text-light font-h2"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- slide-1 -->
+
+    <div
+      class="md:w-screen md:h-[50.25rem] h-[50rem] font-h2 md:bg-cover bg-center"
+      style="
+        background-image: url('Images/professional-photographer-and-model-on-fashion-sho-2023-11-27-04-55-58-utc.jpg');
+        background-size: cover;
+      "
+    >
+      <div
+        class="absolute md:mt-[19rem] mt-[25rem] lg:ml-[-4rem] w-screen md:text-[8rem] text-[4rem] font-bold flex justify-center content-center text-light hover:cursor-pointer hover:animate-ping transition duration-300"
+      >
+        Contact us
+      </div>
+    </div>
+
+    <!-- slide-2 -->
+
+    <div
+      class="w-screen lg:h-[42.625rem] h-[75rem] bg-color-2 font-h2 grid justify-items-center"
+    >
+      <div
+        class="text-primary grid tracking-[0.1em] lg:ml-[-5rem] text-[1.125rem] mt-[6.625rem]"
+      >
+        OUR CONTACT ADDRESS
+      </div>
+      <div
+        class="absolute mt-[8.625rem] lg:text-[3.125rem] lg:ml-[-5rem] text-[1.9rem] text-light font-semibold"
+      >
+        Quick Contact Address
+      </div>
+      <div
+        class="absolute lg:w-screen w-[20rem] grid justify-center lg:ml-[-5rem] mt-[13.625rem] text-color-1"
+      >
+        Transform your vision into captivating visuals with our expert video
+        production services – contact us now to bring your ideas to life!
+      </div>
+
+      <div
+        class="absolute mt-[20rem] lg:w-[65.625rem] lg:ml-[-3rem] w-[20rem] lg:h-[14.9375rem] h-[47rem] grid lg:grid-cols-3 lg:gap-1 grid-cols-1 gap-6"
+      >
+        <div class="border border-solid border-color-1">
+          <div class="absolute m-[2rem]">
+            <img
+              src="Images/phone.png"
+              class="w-[3.125rem] h-[3.125rem]"
+              alt=""
+            />
+          </div>
+          <div
+            class="absolute text-light text-[1.875rem] h-[2.375rem] ml-[1.5rem] mt-[7.5rem]"
+          >
+            Phone Number
+          </div>
+          <div class="text-color-1 text-[1rem] ml-[1.5rem] mt-[11rem] font-p">
+            91+ 8830003165
+          </div>
+          <div class="text-color-1 text-[1rem] ml-[1.5rem] font-p">
+            91+ 8830003165
+          </div>
+        </div>
+        <div class="border border-solid border-color-1">
+          <div class="absolute m-[2rem]">
+            <img
+              src="Images/mail.png"
+              class="w-[3.125rem] h-[3.125rem]"
+              alt=""
+            />
+          </div>
+          <div
+            class="absolute text-light text-[1.875rem] h-[2.375rem] ml-[1.5rem] mt-[7.5rem]"
+          >
+            Email Address
+          </div>
+          <div
+            class="text-color-1 text-[1.0625rem] ml-[1.5rem] mt-[11rem] font-p"
+          >
+            hello@tridententertainment.in
+          </div>
+        </div>
+        <div class="border border-solid border-color-1">
+          <div class="absolute m-[2rem]">
+            <img
+              src="Images/location.png"
+              class="w-[3.125rem] h-[3.125rem]"
+              alt=""
+            />
+          </div>
+          <div
+            class="absolute text-light text-[1.875rem] h-[2.375rem] ml-[1.5rem] mt-[7.5rem]"
+          >
+            Office Location
+          </div>
+          <div
+            class="text-color-1 text-[1.0625rem] ml-[1.5rem] mt-[11rem] font-p"
+          >
+            Viman Nagar, Pune
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- slide-3 -->
+
+    <section
+      class="contact bg-secondary lg:h-[60rem] h-[75rem] font-h2 w-screen grid justify-items-center items-center"
+    >
+      <div class="grid lg:grid-cols-2 lg:gap-1 lg:ml-[-6rem] lg:w-[70.5rem]">
+        <div class="">
+          <div class="text-primary lg:mt-0 mt-[1rem] tracking-[0.1em]">
+            LET'S SAY HI!
+          </div>
+          <div class="lg:hidden">
+            <img
+              src="Images/professional-camera-for-professional-shooting-2023-11-27-05-06-11-utc.jpg"
+              class="w-[20rem] h-[20rem] lg:ml-[2rem] mt-[0.5rem]"
+              alt=""
+            />
+          </div>
+          <div
+            class="text-light text-[3.125rem] font-semibold lg:mt-3 mt-[3rem]"
+          >
+            Get In Touch
+          </div>
+          <div class="text-light font-p mt-3">Call us: 91+ 8830003165</div>
+          <div class="text-light font-extralight font-p mt-[0.3rem]">
+            Our email: hello@tridententertainment.in
+          </div>
+
+          <!-- form -->
+
+          <form action="#" class="mt-[1.8125rem]">
+            <div class="input-box">
+              <div class="input-field field">
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  id="name"
+                  class="item lg:w-[32rem] w-[20rem] pl-4 bg-transparent text-color-1 font-p h-[2.5rem] border border-solid border-color-1"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="input-field field">
+                <input
+                  type="text"
+                  placeholder="Your Email"
+                  id="email"
+                  class="item lg:w-[32rem] w-[20rem] pl-4 bg-transparent text-color-1 font-p h-[2.5rem] border border-solid border-color-1 mt-[1.8125rem]"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="input-field field">
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  id="subject"
+                  class="item lg:w-[32rem] w-[20rem] pl-4 bg-transparent text-color-1 font-p h-[2.5rem] border border-solid border-color-1 mt-[1.8125rem]"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="input-field field">
+                <input
+                  type="text"
+                  placeholder="Your Message"
+                  id="message"
+                  class="item lg:w-[32rem] w-[20rem] lg:h-[10rem] h-[15rem] pl-4 bg-transparent text-color-1 font-p border border-solid border-color-1 mt-[1.8125rem]"
+                  autocomplete="off"
+                />
+              </div>
+
+              <button
+                type="submit"
+                class="lg:w-[33.2rem] lg:ml-0 ml-[6rem] mt-[1.8125rem] text-light bg-primary border-2 border-primary hover:bg-transparent hover:text-light font-bold py-3.5 px-6"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="hidden lg:block">
+          <img
+            src="Images/professional-camera-for-professional-shooting-2023-11-27-05-06-11-utc.jpg"
+            class="w-[40.625rem] h-[39.3rem] lg:ml-0"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="contact.js"></script>
+  </body>
+</html>

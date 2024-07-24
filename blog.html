@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/src/input.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400;500&display=swap"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="Images/favicon_io/favicon-32x32.png"
+    />
+    <title>Blog</title>
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- navbar -->
+    <nav class="bg-color-2 text-white w-screen fixed top-0 bg-opacity-86 z-50">
+      <div class="container mx-auto px-0 md:flex items-center gap-[27rem]">
+        <!-- Logo -->
+        <div class="flex items-center md:justify-between md:w-auto w-full">
+          <img
+            src="Images/logo_copy2.png"
+            class="md:pl-[5rem] w-[12rem]"
+            alt=""
+          />
+
+          <!-- mobile menu icon -->
+          <div class="md:hidden flex items-center md:ml-0 ml-[9.5rem]">
+            <button
+              type="button"
+              class="mobile-menu-button bg-color-1 border-1 border-primary"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="md:w-6 md:h-6 w-8 h-7 text-primary"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="hidden md:flex md:flex-row flex-col items-center justify-start md:space-x-1 pb-3 md:pb-0 md:gap-5 navigation-menu"
+        >
+          <a
+            href="index.html"
+            class="py-2 px-4 block no-underline hover:text-primary font-h2 text-light"
+            >Home</a
+          >
+          <a
+            href="About.html"
+            class="py-2 px-4 block no-underline hover:text-primary text-light font-h2"
+            >About</a
+          >
+          <a
+            href="Services.html"
+            class="py-2 px-4 block no-underline hover:text-primary text-light font-h2"
+            >Services</a
+          >
+          <!-- Dropdown menu -->
+          <div class="relative">
+            <button
+              type="button"
+              class="dropdown-toggle py-2 px-4 text-light hover:bg-primary hover:text-light flex items-center gap-2 rounded bg-transparent"
+            >
+              <span class="text-light font-h2 text-[1rem]">Pages</span>
+              <svg
+                class="w-3 h-3 pointer-events-none"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </button>
+            <div
+              class="dropdown-menu absolute hidden bg-light text-white rounded-b-lg pb-2 w-48"
+            >
+              <a
+                href="work.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Our Work</a
+              >
+              <a
+                href="clients.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Our Clients</a
+              >
+              <a
+                href="photogall.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Photo Gallery</a
+              >
+              <a
+                href="blog.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Blog</a
+              >
+            </div>
+          </div>
+          <a
+            href="contact.html"
+            class="py-2 px-4 block no-underline hover:text-primary text-light font-h2"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- slide-1 -->
+
+    <div
+      class="w-screen lg:h-[40.25rem] h-[30.25rem] font-h2"
+      style="
+        background-image: url('Images/workspace-1280538_1920.jpg');
+        background-size: cover;
+      "
+    >
+      <div
+        class="absolute lg:mt-[17.5rem] lg:ml-[-5rem] mt-[13.375rem] w-screen grid justify-items-center lg:text-[5rem] text-[4rem] font-semibold text-light hover:animate-ping"
+      >
+        Blog
+      </div>
+      <div
+        class="absolute lg:mt-[26.18rem] font-semibold mt-[19.5rem] w-[20.5rem] lg:ml-[-5rem] ml-[4rem] md:w-screen grid justify-items-center text-color-1"
+      >
+        Unlocking Dreams: Your Path to Stardom with Our Film Production Company
+      </div>
+    </div>
+
+    <!-- slide-2 -->
+
+    <div
+      class="w-screen xl:h-[80rem] h-[130rem] bg-secondary font-h2 grid justify-items-center"
+    >
+      <div
+        class="xl:w-[80rem] h-[62rem] xl:mt-[8rem] lg:ml-[-5rem] grid xl:grid-cols-2 xl:gap-5 grid-cols-1 gap-10"
+      >
+        <div class="p-5 xl:pt-0 pt-10">
+          <div class="text-primary tracking-[0.1em] text-[1.1rem] font-bold">
+            WHO WE ARE
+          </div>
+          <div class="text-color-1 mt-2">
+            At trident Entertainment we breathe life into stories. Our passion
+            lies in crafting compelling narratives that resonate with hearts and
+            minds. Whether it’s a gripping drama, a heartwarming romance, or an
+            adrenaline-pumping action flick, we’re here to turn dreams into
+            reality.
+          </div>
+          <div
+            class="text-primary font-bold tracking-[0.1em] text-[1.1rem] mt-7"
+          >
+            WHAT SET US APART
+          </div>
+          <div class="mt-4">
+            <div class="flex gap-4">
+              <div>
+                <img src="Images/tick.png" class="" alt="" />
+              </div>
+              <div class="text-color-1">
+                <span class="text-light font-bold tracking-[0.1em]"
+                  >Holistic Approach:</span
+                >
+                We don’t just produce films; we create experiences. From
+                pre-production to post-production, our team of experts ensures
+                every frame is a work of art.
+              </div>
+            </div>
+            <div class="flex gap-4 mt-3">
+              <div>
+                <img src="Images/tick.png" class="" alt="" />
+              </div>
+              <div class="text-color-1">
+                <span class="text-light font-bold tracking-[0.1em]"
+                  >Inclusive Platform:</span
+                >
+                Actors, models, and aspiring talents, listen up! We believe in
+                inclusivity. Whether you’re a seasoned artist or a fresh face,
+                there’s a place for you here.
+              </div>
+            </div>
+            <div class="flex gap-4 mt-3">
+              <div>
+                <img src="Images/tick.png" class="" alt="" />
+              </div>
+              <div class="text-color-1">
+                <span class="text-light font-bold tracking-[0.1em]"
+                  >Events That Sparkle:
+                </span>
+                Our events are more than gatherings; they’re celebrations of
+                creativity. From film premieres to industry mixers, we curate
+                experiences that leave a lasting impression.
+              </div>
+            </div>
+          </div>
+          <div
+            class="text-primary font-bold tracking-[0.1em] mt-7 text-[1.1rem]"
+          >
+            JOIN THE JOURNEY
+          </div>
+          <div class="mt-4 flex gap-4 font-bold text-light">
+            <div>
+              <img
+                src="Images/right-chevron.png"
+                class="w-[1.5rem] h-[1.5rem]"
+                alt=""
+              />
+            </div>
+            <div class="font-bold text-[1.5rem]">
+              For Aspiring Actors and Models
+            </div>
+          </div>
+          <div class="ml-[4rem] mt-4">
+            <div class="text-color-1">
+              <span class="text-light font-bold tracking-[0.1em]"
+                >Auditions:</span
+              >
+              Step onto our stage and showcase your talent. Our auditions are
+              your chance to shine. Prepare your monologues, practice your
+              poses, and let your charisma do the talking.
+            </div>
+          </div>
+          <div class="ml-[4rem] mt-2">
+            <div class="text-color-1">
+              <span class="text-light font-bold tracking-[0.1em]"
+                >Training:</span
+              >
+              Even stars need polishing. Our workshops cover acting techniques,
+              screen presence, and camera confidence. Learn from seasoned
+              professionals and elevate your craft.
+            </div>
+          </div>
+          <div class="ml-[4rem] mt-2">
+            <div class="text-color-1">
+              <span class="text-light font-bold tracking-[0.1em]"
+                >Networking:
+              </span>
+              Rub shoulders with industry insiders. Our events provide
+              networking opportunities that could lead to your big break. Who
+              knows? The person you chat with over canapés might be the director
+              of your next film.
+            </div>
+          </div>
+          <div class="mt-4 flex gap-4 font-bold text-light">
+            <div>
+              <img
+                src="Images/right-chevron.png"
+                class="w-[1.5rem] h-[1.5rem]"
+                alt=""
+              />
+            </div>
+            <div class="font-bold text-[1.5rem]">
+              For Filmmakers and Creatives
+            </div>
+          </div>
+          <div class="ml-[4rem] mt-4">
+            <div class="text-color-1">
+              <span class="text-light font-bold tracking-[0.1em]"
+                >Collaboration:</span
+              >
+              We thrive on collaboration. If you’re a director, writer,
+              cinematographer, or any other creative soul, let’s create magic
+              together. Your vision + our resources = cinematic brilliance.
+            </div>
+          </div>
+          <div class="ml-[4rem] mt-2">
+            <div class="text-color-1">
+              <span class="text-light font-bold tracking-[0.1em]"
+                >Script Submissions:</span
+              >
+              Got a screenplay burning a hole in your pocket? Send it our way!
+              We’re always on the lookout for fresh stories that ignite
+              imaginations.
+            </div>
+          </div>
+          <div
+            class="text-primary font-bold tracking-[0.1em] mt-7 text-[1.1rem]"
+          >
+            YOUR JOURNEY BEGINS HERE
+          </div>
+          <div class="text-color-1 mt-2">
+            Ready to embark on a rollercoaster ride of passion, dedication, and
+            stardust? Contact us today at
+            <span class="font-p font-bold">8830003165</span> &
+            <span class="font-p font-bold">hello@tridententertainment.in</span>
+            or visit our website at tridententertainment.in . Let’s turn your
+            dreams into blockbusters!
+          </div>
+        </div>
+        <div>
+          <img
+            class="lg:h-[62rem] lg:w-[40rem] w-[20rem] lg:pl-0 pl-8"
+            src="Images/Black Modern Fashion Magazine Cover_20240331_121132_0000.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- slide-2 -->
+
+    <div class="bg-color-2 lg:h-[29.25rem] h-[42.5rem] w-screen font-h2">
+      <div
+        class="absolute grid justify-items-center lg:ml-[-2rem] w-screen h-[3.9375rem] lg:mt-[2.375rem] mt-[4rem]"
+      >
+        <img src="Images/logo_copy.png" class="w-[12rem]" alt="" />
+      </div>
+
+      <div
+        class="absolute w-screen grid justify-items-center lg:mt-[10rem] lg:ml-[-2rem] mt-[11rem]"
+      >
+        <div
+          class="absolute grid lg:grid-cols-5 lg:gap-6 grid-cols-1 gap-3 justify-items-center w-[35.875rem] h-[1.4375rem]"
+        >
+          <div>
+            <a
+              href="index.html"
+              class="no-underline text-primary hover:text-light"
+              alt=""
+              >Home</a
+            >
+          </div>
+          <div>
+            <a
+              href="About.html"
+              class="no-underline text-primary hover:text-light"
+              alt=""
+              >About</a
+            >
+          </div>
+          <div>
+            <a
+              href="Services.html"
+              class="no-underline text-primary hover:text-light"
+              alt=""
+              >Services</a
+            >
+          </div>
+          <div class="lg:mt-[-0.5rem] lg:ml-0 ml-[1rem] relative">
+            <button
+              type="button"
+              class="dropdown-toggle py-2 px-4 text-primary hover:text-light flex items-center gap-2 rounded bg-transparent"
+            >
+              <span class="text-primary font-h2 text-[1rem]">Pages</span>
+              <svg
+                class="w-3 h-3 pointer-events-none"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </button>
+            <div
+              class="dropdown-menu absolute hidden bg-light text-white rounded-b-lg pb-2 w-48"
+            >
+              <a
+                href="work.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Our Work</a
+              >
+              <a
+                href="clients.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Our Clients</a
+              >
+              <a
+                href="photogall.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Photo Gallery</a
+              >
+              <a
+                href="blog.html"
+                class="block px-6 py-2 hover:bg-primary hover:text-light no-underline text-color-2"
+                >Blog</a
+              >
+            </div>
+          </div>
+          <div>
+            <a
+              href="contact.html"
+              class="no-underline text-primary hover:text-light"
+              alt=""
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="w-screen lg:ml-[-2rem] grid justify-items-center">
+        <div class="absolute lg:mt-[23rem] mt-[33rem]">
+          <div
+            class="lg:w-[48.125rem] w-[20rem] h-[2.9375rem] flex justify-center text-center text-color-1"
+          >
+            Enhance brand visibility and engagement through captivating video
+            content.
+          </div>
+        </div>
+        <div
+          class="absolute grid grid-cols-4 gap-4 w-[9.625rem] h-[1.875rem] lg:mt-[19.6875rem] mt-[30rem]"
+        >
+          <div class="flex items-center">
+            <a href="https://www.facebook.com/profile.php?id=100064082941369"
+              ><img src="Images/facebook.png" alt=""
+            /></a>
+          </div>
+          <div class="flex items-center">
+            <a
+              href="https://youtube.com/@tridententertainment3586?si=5789qhkeKzOLTfOz"
+              ><img src="Images/youthob.png" class="" alt=""
+            /></a>
+          </div>
+          <div class="flex items-center">
+            <a href="https://www.instagram.com/tridententertainment431/"
+              ><img src="Images/insta.png" alt=""
+            /></a>
+          </div>
+          <div class="flex items-center">
+            <a
+              href="https://www.linkedin.com/company/trident-entertainment-video-production"
+            >
+              <img
+                src="Images/linkedin.png"
+                class="w-[30px] h-[30px] bg-color-2"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="text-color-1 lg:mt-[28rem] lg:ml-[-2rem] mt-[41rem] w-screen absolute grid justify-items-center"
+      >
+        © 2024 Trident Entertainment. All Rights Reserved.
+      </div>
+    </div>
+
+    <script src="contact.js"></script>
+  </body>
+</html>
