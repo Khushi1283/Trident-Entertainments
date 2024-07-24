@@ -13,6 +13,6 @@ Blog section for company news and updates
 Contact Us page with contact information
 
 Images of website homepage and a few key pages:
-![screenshot](Homepage.png)
+![Homepage](Homepage.png)
 
 Note: This is a prototype and may not represent the final product
