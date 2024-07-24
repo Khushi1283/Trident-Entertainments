@@ -13,6 +13,7 @@ Blog section for company news and updates
 Contact Us page with contact information
 
 Images of website homepage and a few key pages:
+
 ![Homepage](https://github.com/user-attachments/assets/ce2ec549-c0b5-4173-83ee-4d843afb78a9)
 ![About Us](https://github.com/user-attachments/assets/e451e7f6-10c5-46d2-9e76-bead55d3cd3d)
 ![Photo Gallery](https://github.com/user-attachments/assets/759d68a4-1845-4d2d-9998-3a0d725e2b57)
