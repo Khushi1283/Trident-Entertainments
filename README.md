@@ -1,7 +1,7 @@
 # Trident-Entertainment
 Prototype website for Trident Entertainment
 
-This repository contains the HTML, CSS, and JavaScript code for a prototype website developed during an internship at Trident Entertainments. The website aims to provide an overview of the company, its services, and client portfolio.
+This repository contains the HTML, Tailwind CSS, and JavaScript code for a prototype website developed during an internship at Trident Entertainments. The website aims to provide an overview of the company, its services, and client portfolio.
 
 Key features:
 Homepage showcasing the company's brand and mission
